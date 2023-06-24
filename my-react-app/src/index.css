@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "inter";
+    src: url();
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  /* ==== Default Typography ==== */
+  h1,
+  .h1 {
+    @apply text-2xl md:text-4xl font-bold;
+  }
+  h2,
+  .h2 {
+    @apply text-xl md:text-3xl font-bold;
+  }
+  h3,
+  .h3 {
+    @apply text-lg md:text-2xl font-bold;
+  }
+  h4,
+  .h4 {
+    @apply text-base md:text-xl font-bold;
+  }
+  body,
+  .body {
+    @apply text-sm md:text-base;
+  }
+}
