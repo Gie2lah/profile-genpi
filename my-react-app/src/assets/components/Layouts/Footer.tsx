@@ -73,7 +73,7 @@ const Footer = () => {
         <p className="">© GenPI Dumai {new Date().getFullYear()}</p>
         <div className="flex gap-4 font-semibold">
           <p>Contact</p>
-          <p>Tentang Kami!</p>
+          <p>Tentang Kami</p>
         </div>
       </div>
     </>
