@@ -106,11 +106,31 @@ const HomePage = () => {
               <p>Pembina 1</p>
             </div>
           </div>
+          <button className="bg-sky-600 border rounded py-2 px-4 font-bold hover:bg-sky-400 mt-4">
+            Learn more
+          </button>
         </div>
       </section>
       <section className="px-[120px] py-[10%]">
         <h2 className="text-center mb-8">Destinasi Wisata</h2>
-        <div className="flex flex-wrap justify-between items-center">
+        <div className="flex flex-wrap justify-center items-center gap-4">
+          <div className="bg-slate-800 border rounded px-4 py-8 max-w-md flex flex-col  text-start space-y-2 text-white ">
+            <img
+              src="/public/images/pantai-koneng.jpg"
+              alt=""
+              className="h-[200px] w-[800px] rounded block"
+            />
+            <h4>Pantai Koneng</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              id, enim doloremque...
+            </p>
+            <p>
+              <a href="#" className="hover:text-sky-500">
+                Baca selengkapnya
+              </a>
+            </p>
+          </div>
           <div className="bg-slate-800 border rounded px-4 py-8 max-w-md flex flex-col  text-start space-y-2 text-white ">
             <img
               src="/public/images/Logo-GenPI.jpg"
@@ -123,7 +143,9 @@ const HomePage = () => {
               id, enim doloremque...
             </p>
             <p>
-              <a href="#">baca selebihnya</a>
+              <a href="#" className="hover:text-sky-500">
+                Baca selengkapnya
+              </a>
             </p>
           </div>
         </div>
@@ -131,13 +153,13 @@ const HomePage = () => {
       <footer className="mb-20">
         <h3 className="text-center mb-8">Follow US</h3>
         <div className="flex justify-center space-x-4">
-          <a href="#">
+          <a href="#" className="hover:text-sky-500">
             <IoLogoInstagram size={30} />
           </a>
-          <a href="#">
+          <a href="#" className="hover:text-sky-500">
             <IoLogoYoutube size={30} />
           </a>
-          <a href="#">
+          <a href="#" className="hover:text-sky-500">
             <IoLogoTiktok size={30} />
           </a>
         </div>
