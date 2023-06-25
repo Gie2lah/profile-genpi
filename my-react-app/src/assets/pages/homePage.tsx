@@ -1,5 +1,6 @@
 import React from "react";
 import { IoLogoInstagram, IoLogoTiktok, IoLogoYoutube } from "react-icons/io5";
+import Footer from "../components/Layouts/Footer";
 
 const HomePage = () => {
   return (
@@ -116,7 +117,7 @@ const HomePage = () => {
         <div className="flex flex-wrap justify-center items-center gap-4">
           <div className="bg-slate-800 border rounded px-4 py-8 max-w-md flex flex-col  text-start space-y-2 text-white ">
             <img
-              src="/public/images/pantai-koneng.jpg"
+              src="/public/images/Logo-GenPI.jpg"
               alt=""
               className="h-[200px] w-[800px] rounded block"
             />
@@ -150,20 +151,8 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <footer className="mb-20">
-        <h3 className="text-center mb-8">Follow US</h3>
-        <div className="flex justify-center space-x-4">
-          <a href="#" className="hover:text-sky-500">
-            <IoLogoInstagram size={30} />
-          </a>
-          <a href="#" className="hover:text-sky-500">
-            <IoLogoYoutube size={30} />
-          </a>
-          <a href="#" className="hover:text-sky-500">
-            <IoLogoTiktok size={30} />
-          </a>
-        </div>
-      </footer>
+
+      <Footer />
     </>
   );
 };

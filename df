@@ -1,0 +1,26 @@
+* [33m4c5a113[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m merubah index.css
+* [33m4d656c5[m menambahkan style di index.css
+* [33m8471adb[m tes halaman home
+* [33m1999777[m menambahkan folder unstyledlink.tsx
+* [33mafb5962[m setup react
+* [33m56488d0[m Menambahkan beberapa package
+* [33m6144038[m Membuat react menggunakan vite
+*   [33m340bfc5[m Merge branch 'main' of https://github.com/Gie2lah/profile-genpi
+[32m|[m[33m\[m  
+[32m|[m * [33m31f3a3b[m Create style.css
+* [33m|[m [33m7ca0803[m menambahkan style.css
+[33m|[m[33m/[m  
+*   [33me41c81a[m merge conflict dev
+[34m|[m[35m\[m  
+[34m|[m * [33m9ddfd13[m Mengubah file anggota
+* [35m|[m [33m047d511[m Mengubah isi anggota
+[35m|[m[35m/[m  
+*   [33m6809fd0[m Merge branch 'anggota'
+[36m|[m[1;31m\[m  
+[36m|[m * [33m44b2162[m Menambahkan file anggota
+* [1;31m|[m [33mf3017ff[m Menambahkan file kabid
+[1;31m|[m[1;31m/[m  
+* [33mac804d9[m Mengembalikan file index.css
+* [33meb94064[m menghaspus index.css
+* [33mf1c1a33[m Menambahkan file index dan index.css
+* [33m18a4d9d[m Menambahkan file index.html
