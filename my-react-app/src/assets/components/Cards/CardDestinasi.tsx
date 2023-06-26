@@ -4,27 +4,51 @@ import { IconType } from "react-icons";
 export const CardDestinasiData = [
   {
     id: 1,
-    images: "/public/images/Logo-GenPI.jpg",
+    images: "/public/images/pantai-koneng.jpg",
     name: "Pantai Koneng",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id,
         enim doloremque...`,
-    to: "/destinasi",
+    to: "/pantai-koneng",
   },
   {
-    id: 1,
-    images: "/public/images/Logo-GenPI.jpg",
-    name: "Pantai Koneng",
+    id: 2,
+    images: "/public/images/kampung-teratai.jpg",
+    name: "Kampung Teratai",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id,
         enim doloremque...`,
-    to: "/destinasi",
+    to: "/kampung-teratai",
   },
   {
-    id: 1,
-    images: "/public/images/Logo-GenPI.jpg",
-    name: "Pantai Koneng",
+    id: 3,
+    images: "/public/images/pantai-bahterah.jpg",
+    name: "Pantai Bahterah Alam Guntung",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id,
-        enim doloremque...`,
-    to: "/destinasi",
+    enim doloremque...`,
+    to: "/pantai-bahterah-alam-guntung",
+  },
+  {
+    id: 4,
+    images: "/public/images/la-marina-cafe.jpg",
+    name: "La Marina Cafe",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id,
+    enim doloremque...`,
+    to: "/la-marina-cafe",
+  },
+  {
+    id: 5,
+    images: "/public/images/pesona-mundam.jpg",
+    name: "Pesona Mundam",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id,
+    enim doloremque...`,
+    to: "/pesona-mundam",
+  },
+  {
+    id: 6,
+    images: "/public/images/rumah-pohon.jpg",
+    name: "Rumah Pohon Bagan Besar",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id,
+    enim doloremque...`,
+    to: "/rumah-pohon-bagan-besar",
   },
 ];
 
@@ -35,7 +59,7 @@ interface CardType {
 
 const CardDestinasi = ({ children, id }) => {
   return (
-    <div className="shadow-md drop-shadow-xl border-black bg-sky-700 rounded max-w-md flex flex-col  text-start space-y-2 text-white ">
+    <div className="shadow-md drop-shadow-xl border-black bg-white rounded-md md:max-w-[500px] text-start space-y-2 text-black ">
       {children}
     </div>
   );
@@ -43,8 +67,12 @@ const CardDestinasi = ({ children, id }) => {
 
 const Header = ({ images }) => {
   return (
-    <div>
-      <img src={images} alt="" className="h-[200px] w-[800px] block" />
+    <div className="">
+      <img
+        src={images}
+        alt=""
+        className="h-[150px] w-[600px] rounded-t-md object-cover"
+      />
     </div>
   );
 };
@@ -60,7 +88,7 @@ const Body = ({ name, desc }) => {
 
 const Footer = ({ to }) => {
   return (
-    <div>
+    <div className="px-4 pb-4">
       <p>
         <a href={to} className="hover:text-sky-500">
           Baca selengkapnya

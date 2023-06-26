@@ -4,11 +4,12 @@
 
 @layer base {
   @font-face {
-    font-family: "Inter";
+    font-family: "Inter", "Montserrat";
     font-style: normal;
     font-weight: 100 900;
     font-display: optional;
-    src: url(/my-react-app/public/font/Inter-VariableFont_slnt\,wght.ttf);
+    src: url(/my-react-app/public/font/Inter-VariableFont_slnt\,wght.ttf),
+      url(/my-react-app/public/font/pakai/Montserrat-Regular.ttf);
   }
   html {
     scroll-behavior: smooth;
@@ -21,19 +22,19 @@
   /* ==== Default Typography ==== */
   h1,
   .h1 {
-    @apply font-primary text-2xl md:text-4xl font-bold;
+    @apply font-secondary text-2xl md:text-4xl font-bold;
   }
   h2,
   .h2 {
-    @apply font-primary text-xl md:text-3xl font-bold;
+    @apply font-secondary text-xl md:text-3xl font-bold;
   }
   h3,
   .h3 {
-    @apply font-primary text-lg md:text-2xl font-bold;
+    @apply font-secondary text-lg md:text-2xl font-bold;
   }
   h4,
   .h4 {
-    @apply font-primary text-base md:text-xl font-bold;
+    @apply font-secondary text-base md:text-xl font-bold;
   }
   body,
   .body {

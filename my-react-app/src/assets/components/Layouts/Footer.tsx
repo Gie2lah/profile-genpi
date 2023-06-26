@@ -7,57 +7,96 @@ import {
   IoMailOutline,
   IoCallOutline,
 } from "react-icons/io5";
+import UnstyledLink from "../Links/UnstyledLink";
+
+const socialMedia = [
+  {
+    icon: <IoLogoInstagram />,
+    to: "https://www.instagram.com/genpidumai/",
+    target: "_blank",
+  },
+  {
+    icon: <IoLogoYoutube />,
+    to: "/instagram",
+    target: "_blank",
+  },
+  {
+    icon: <IoLogoTiktok />,
+    to: "/instagram",
+    target: "_blank",
+  },
+];
+
+const contact = [
+  {
+    icon: <IoLocationOutline />,
+    desc: `JL. Teratai, Dumai Kota,
+    Kecamatan Dumai Kota, Kota Dumai, Riau 28811`,
+  },
+  {
+    icon: <IoCallOutline />,
+    desc: "0811-2030-0320",
+  },
+  {
+    icon: <IoMailOutline />,
+    desc: "genpidumai@gmail.com",
+  },
+];
+
+const site = [
+  {
+    name: "Home",
+    to: "/home",
+  },
+  {
+    name: "About GenPI",
+    to: "/about-genpi",
+  },
+  {
+    name: "Destinasi",
+    to: "/destinasi",
+  },
+];
 
 const Footer = () => {
   return (
     <>
-      <footer className="py-10 px-[10%] bg-sky-600">
-        <hr />
-        <h3 className="text-center mb-8 mt-6">Follow US</h3>
+      <footer className="py-10 px-[10%] bg-white">
+        <hr className="bg-black" />
+        <h3 className="text-center mb-6 mt-6">Follow US</h3>
         <div className="flex justify-center space-x-4">
-          <a href="#" className="hover:text-sky-500">
-            <IoLogoInstagram size={30} />
-          </a>
-          <a href="#" className="hover:text-sky-500">
-            <IoLogoYoutube size={30} />
-          </a>
-          <a href="#" className="hover:text-sky-500">
-            <IoLogoTiktok size={30} />
-          </a>
+          {socialMedia.map(({ icon, to, target }) => (
+            <a
+              href={to}
+              target={target}
+              className="hover:text-gray-700 text-black text-3xl"
+            >
+              {icon}
+            </a>
+          ))}
         </div>
-        <div className="bg-sky-600">
+        <div className="">
           <div className="flex flex-col md:flex-row justify-between mt-8 gap-6">
-            <div className="max-w-lg">
+            <div className="max-w-lg space-y-3">
               <h4>Contact US</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Cupiditate, nostrum.
               </p>
-              <p className="flex items-center gap-2">
-                <IoLocationOutline size={30} /> JL. Teratai, Dumai Kota,
-                Kecamatan Dumai Kota, Kota Dumai, Riau 28811
-              </p>
-              <p className="flex items-center gap-2">
-                <IoCallOutline size={30} /> 0811-2030-0320
-              </p>
-              <p className="flex items-center gap-2">
-                <IoMailOutline size={30} />{" "}
-                <a href="#" className="text-black hover:text-sky-500">
-                  genpidumai@gmail.com
-                </a>
-              </p>
+              {contact.map(({ icon, desc }) => (
+                <p className="flex items-center gap-2">
+                  <span className="text-3xl">{icon}</span>
+                  {desc}
+                </p>
+              ))}
             </div>
-            <div>
+            <div className="space-y-3">
               <h4>Our Other Site</h4>
-              <p>
-                <a href="#">Home</a>
-              </p>
-              <p>
-                <a href="#">About GenPI</a>
-              </p>
-              <p>
-                <a href="#">Destinasi</a>
-              </p>
+              {site.map(({ to, name }) => (
+                <p>
+                  <a href={to}>{name}</a>
+                </p>
+              ))}
             </div>
             <div className="flex items-center">
               <img
@@ -72,8 +111,12 @@ const Footer = () => {
       <div className="bg-black px-[10%] py-4 flex justify-between text-white font-semibold flex-wrap">
         <p className="">© GenPI Dumai {new Date().getFullYear()}</p>
         <div className="flex gap-4 font-semibold">
-          <p>Contact</p>
-          <p>Tentang Kami</p>
+          <UnstyledLink to="/contact" target="_blank">
+            Contact
+          </UnstyledLink>
+          <UnstyledLink to="/tentang-kami" target="_blank">
+            Tentang kami
+          </UnstyledLink>
         </div>
       </div>
     </>
