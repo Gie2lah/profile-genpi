@@ -1,6 +1,10 @@
 import React from "react";
 import { IoLogoInstagram, IoLogoTiktok, IoLogoYoutube } from "react-icons/io5";
 import Footer from "../components/Layouts/Footer";
+import CardAnggota, { CardAnggotaData } from "../components/Cards/CardAnggota";
+import CardDestinasi, {
+  CardDestinasiData,
+} from "../components/Cards/CardDestinasi";
 
 const HomePage = () => {
   return (
@@ -16,7 +20,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="py-[120px] px-[10%] min-h-screen ">
+      <section className="py-[120px] px-[10%]  ">
         <div>
           <h2 className="text-center">About GenPI</h2>
           <div className="flex flex-wrap justify-between items-center">
@@ -38,120 +42,33 @@ const HomePage = () => {
               />
             </div>
           </div>
-          <h2 className="text-center mt-6 mb-4">Pengurus GenPI</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-            <div className="bg-slate-800 border rounded px-4 py-8 max-w-xs text-center flex flex-col items-center space-y-2 text-white ">
-              <img
-                src="/public/images/Logo-GenPI.jpg"
-                alt=""
-                className="h-[200px] rounded-full block"
-              />
-              <h4>Ucu Mat</h4>
-              <p>ucumat@gmail.com</p>
-              <hr />
-              <p>Pembina 1</p>
-            </div>
-            <div className="bg-slate-800 border rounded px-4 py-8 max-w-xs text-center flex flex-col items-center space-y-2 text-white ">
-              <img
-                src="/public/images/Logo-GenPI.jpg"
-                alt=""
-                className="h-[200px] rounded-full block"
-              />
-              <h4>Ucu Mat</h4>
-              <p>ucumat@gmail.com</p>
-              <hr />
-              <p>Pembina 1</p>
-            </div>
-            <div className="bg-slate-800 border rounded px-4 py-8 max-w-xs text-center flex flex-col items-center space-y-2 text-white ">
-              <img
-                src="/public/images/Logo-GenPI.jpg"
-                alt=""
-                className="h-[200px] rounded-full block"
-              />
-              <h4>Ucu Mat</h4>
-              <p>ucumat@gmail.com</p>
-              <hr />
-              <p>Pembina 1</p>
-            </div>
-            <div className="bg-slate-800 border rounded px-4 py-8 max-w-xs text-center flex flex-col items-center space-y-2 text-white ">
-              <img
-                src="/public/images/Logo-GenPI.jpg"
-                alt=""
-                className="h-[200px] rounded-full block"
-              />
-              <h4>Ucu Mat</h4>
-              <p>ucumat@gmail.com</p>
-              <hr />
-              <p>Pembina 1</p>
-            </div>
-            <div className="bg-slate-800 border rounded px-4 py-8 max-w-xs text-center flex flex-col items-center space-y-2 text-white ">
-              <img
-                src="/public/images/Logo-GenPI.jpg"
-                alt=""
-                className="h-[200px] rounded-full block"
-              />
-              <h4>Ucu Mat</h4>
-              <p>ucumat@gmail.com</p>
-              <hr />
-              <p>Pembina 1</p>
-            </div>
-            <div className="bg-slate-800 border rounded px-4 py-8 max-w-xs text-center flex flex-col items-center space-y-2 text-white ">
-              <img
-                src="/public/images/Logo-GenPI.jpg"
-                alt=""
-                className="h-[200px] rounded-full block"
-              />
-              <h4>Ucu Mat</h4>
-              <p>ucumat@gmail.com</p>
-              <hr />
-              <p>Pembina 1</p>
-            </div>
+          <h2 className="text-center mt-6 mb-6">Pengurus GenPI</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2">
+            {CardAnggotaData.map(({ images, name, email, position, id }) => (
+              <CardAnggota id={id}>
+                <CardAnggota.Header images={images} />
+                <CardAnggota.Body name={name} email={email} />
+                <CardAnggota.Footer position={position} />
+              </CardAnggota>
+            ))}
           </div>
-          <button className="bg-sky-600 border rounded py-2 px-4 font-bold hover:bg-sky-400 mt-4">
+          <button className="bg-white border-2 rounded py-2 px-4 font-bold text-black hover:bg-gray-100 mt-4">
             Learn more
           </button>
         </div>
       </section>
-      <section className="px-[120px] py-[10%]">
+      <section className="px-[120px] py-[10%] bg-sky-600">
         <h2 className="text-center mb-8">Destinasi Wisata</h2>
-        <div className="flex flex-wrap justify-center items-center gap-4">
-          <div className="bg-slate-800 border rounded px-4 py-8 max-w-md flex flex-col  text-start space-y-2 text-white ">
-            <img
-              src="/public/images/Logo-GenPI.jpg"
-              alt=""
-              className="h-[200px] w-[800px] rounded block"
-            />
-            <h4>Pantai Koneng</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              id, enim doloremque...
-            </p>
-            <p>
-              <a href="#" className="hover:text-sky-500">
-                Baca selengkapnya
-              </a>
-            </p>
-          </div>
-          <div className="bg-slate-800 border rounded px-4 py-8 max-w-md flex flex-col  text-start space-y-2 text-white ">
-            <img
-              src="/public/images/Logo-GenPI.jpg"
-              alt=""
-              className="h-[200px] w-[800px] rounded block"
-            />
-            <h4>Pantai Koneng</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              id, enim doloremque...
-            </p>
-            <p>
-              <a href="#" className="hover:text-sky-500">
-                Baca selengkapnya
-              </a>
-            </p>
-          </div>
+        <div className="flex flex-wrap items-center gap-4">
+          {CardDestinasiData.map(({ images, name, desc, id, to }) => (
+            <CardDestinasi id={id}>
+              <CardDestinasi.Header images={images} />
+              <CardDestinasi.Body name={name} desc={desc} />
+              <CardDestinasi.Footer to={to} />
+            </CardDestinasi>
+          ))}
         </div>
       </section>
-
       <Footer />
     </>
   );
