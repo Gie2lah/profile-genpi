@@ -2,9 +2,13 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div>
-      <img src="public/images/Logo Genpi.jpg" alt="" />
-    </div>
+    <header>
+      <nav>
+        <ul>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 

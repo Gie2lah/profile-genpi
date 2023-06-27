@@ -8,7 +8,7 @@ export const CardDestinasiData = [
     name: "Pantai Koneng",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id,
         enim doloremque...`,
-    to: "/pantai-koneng",
+    to: "/destinasi/pantai-koneng",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const CardDestinasiData = [
     name: "Kampung Teratai",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id,
         enim doloremque...`,
-    to: "/kampung-teratai",
+    to: "/destinasi/kampung-teratai",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const CardDestinasiData = [
     name: "Pantai Bahterah Alam Guntung",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id,
     enim doloremque...`,
-    to: "/pantai-bahterah-alam-guntung",
+    to: "/destinasi/pantai-bahterah-alam-guntung",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ export const CardDestinasiData = [
     name: "La Marina Cafe",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id,
     enim doloremque...`,
-    to: "/la-marina-cafe",
+    to: "/destinasi/la-marina-cafe",
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ export const CardDestinasiData = [
     name: "Pesona Mundam",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id,
     enim doloremque...`,
-    to: "/pesona-mundam",
+    to: "/destinasi/pesona-mundam",
   },
   {
     id: 6,
@@ -48,7 +48,7 @@ export const CardDestinasiData = [
     name: "Rumah Pohon Bagan Besar",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id,
     enim doloremque...`,
-    to: "/rumah-pohon-bagan-besar",
+    to: "/destinasi/rumah-pohon-bagan-besar",
   },
 ];
 

@@ -1,11 +1,11 @@
-import React from "react";
 import Footer from "../components/Layouts/Footer";
+import React from "react";
 
 const DestinasiPage = () => {
   return (
     <>
-      <div className="min-h-screen flex justify-center items-center bg-slate-800">
-        <h1 className="font-bold text-3xl">Destinasi</h1>
+      <div className="min-h-screen flex items-center justify-center">
+        <h1>Detinasi</h1>
       </div>
       <Footer />
     </>
