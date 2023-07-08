@@ -1,77 +1,78 @@
 import React from "react";
 import Footer from "../../components/Layouts/Footer";
+import TableOfContents from "../../components/Layouts/TableOfContent";
 
 const PantaiKoneng = () => {
   return (
     <>
-      <section className="pt-[120px] px-[7%]">
+      <section className="pt-[120px] px-[10%]">
         <div className="">
           <img
             srcSet="/public/images/pantai-koneng.jpg"
             alt="pantai-koneng"
             title="pantai-koneng"
-            className="h-[400px] w-full object-cover rounded-md"
+            className="h-[450px] w-full object-cover rounded-md"
           />
           <h1 className="mt-3">Wisata Pantai Koneng</h1>
           <p>Written on June 27, 2023 by GenPI Dumai.</p>
-          <hr className="mt-3" />
         </div>
+        <hr className="mt-3" />
       </section>
-      <section className="px-[8%] pt-[30px] leading-relaxed lg:grid lg:grid-cols-[auto, 250px] lg:gap-8 ">
+      <section className="px-[9%] pt-[20px] leading-relaxed lg:grid lg:grid-cols-[auto, 250px] lg:gap-8 ">
         <div className="flex items-center">
-          <article>
-            <h2>Tema 1</h2>
-            <p className="mt-3 w-full lg:w-[90%]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              distinctio ipsam consectetur expedita quam quae voluptatem
-              deserunt odio id aut error possimus saepe consequuntur ipsa nobis
-              pariatur fugit, in dolore placeat reiciendis alias ex eum
-              consequatur est? Fuga rerum sunt exercitationem itaque omnis harum
-              ducimus impedit voluptate unde magni, rem, similique in modi
-              aliquam enim sapiente, dolorum quis fugit. Tempore, incidunt saepe
-              nisi recusandae vitae amet nam iure voluptatum voluptas nulla
-              iusto dolorem. Voluptatum, magni iure. Nisi quas libero,
-              consectetur quibusdam natus ab eius a eveniet non unde ratione?
-              Facilis, accusamus consequuntur. Expedita quibusdam necessitatibus
-              deserunt quis aspernatur molestias odio. Lorem ipsum, dolor sit
-              amet consectetur adipisicing elit. Veritatis nostrum quod iste rem
-              dolor similique iure exercitationem quisquam pariatur ipsa? In
-              molestias aliquam incidunt voluptas, dolorum distinctio beatae
-              voluptate, voluptatem, repellat nulla impedit eum ab molestiae.
-              Cupiditate, dolore est voluptatem eos impedit, ea exercitationem
-              placeat nam, porro nobis nostrum blanditiis inventore! In ipsa a
-              quaerat beatae blanditiis autem! Neque id sit animi iste quam
-              doloribus aperiam cumque nostrum repudiandae explicabo ad, ea
-              sequi voluptas quidem architecto eum! Vitae dolorem nulla labore
-              similique dignissimos voluptas, error, ut consectetur ipsa quasi,
-              mollitia praesentium quis tenetur. Quas eos recusandae, modi
-              beatae necessitatibus vel animi sit doloribus iure aliquid? Vel
-              fugiat numquam nisi magnam asperiores, atque alias perferendis ut
-              omnis? Consectetur necessitatibus nulla, consequuntur temporibus
-              earum exercitationem culpa quaerat aut tempora suscipit maxime
-              obcaecati cumque mollitia reiciendis, doloribus veniam. Distinctio
-              soluta sequi sint suscipit non voluptatem esse perferendis
-              similique blanditiis nobis! Illo, consectetur architecto? Quod,
-              dolor ullam dolorem non, numquam eum officia sunt doloribus, ea
-              quisquam dolores sapiente architecto! Nesciunt accusamus
-              necessitatibus asperiores, fugit nemo tempore similique cum
-              dolorem quam tenetur, dolorum rem sint a vero ipsa cupiditate
-              earum exercitationem rerum quisquam quos vel. Commodi sequi,
-              facilis quos necessitatibus a fugit molestiae esse atque!
+          <article className="content max-w-4xl p-10">
+            <h2>1- Lorem ipsum dolor sit amet.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi
+              eum saepe quo impedit. Recusandae corporis facere at? Qui,
+              eligendi?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi
+              eum saepe quo impedit. Recusandae corporis facere at? Qui,
+              eligendi?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nihil
+              magni necessitatibus nesciunt, obcaecati aspernatur, esse amet
+              voluptates, libero modi sunt. Facilis a animi quibusdam,
+              consequatur repudiandae eius asperiores inventore.
+            </p>
+            <h3>2- Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi
+              eum saepe quo impedit. Recusandae corporis facere at? Qui,
+              eligendi?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi
+              eum saepe quo impedit. Recusandae corporis facere at? Qui,
+              eligendi?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              dolorem facere iure officia! Quae, libero nam ipsam doloremque
+              maxime nisi dicta, earum dolorum alias culpa minus at optio
+              mollitia repellendus.
+            </p>
+            <h4>3- Lorem ipsum dolor sit.</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi
+              eum saepe quo impedit. Recusandae corporis facere at? Qui,
+              eligendi?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi
+              eum saepe quo impedit. Recusandae corporis facere at? Qui,
+              eligendi?
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              cum.
             </p>
           </article>
-          <aside className="py-4  bg-blue-gray-200">
-            <div className="sticky top-32">
-              <div className="overflow-auto hidden max-h-[calc(100vh-9rem-113px)] pb-4 lg:block">
-                <h3>Table of Content</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                  eligendi iste praesentium a at tenetur repellat quaerat odit
-                  temporibus aspernatur! Earum possimus at unde veritatis
-                  assumenda perspiciatis ullam modi ea.
-                </p>
-              </div>
-            </div>
+          <aside className="py-4">
+            <div className="stiky top-36"></div>
           </aside>
         </div>
       </section>
